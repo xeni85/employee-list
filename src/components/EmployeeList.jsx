@@ -1,6 +1,5 @@
 import React from 'react'
 import EmployeeListItem from './EmployeeListItem'
-
 function EmployeeList(props) {
   console.log(props)
   return (
@@ -11,7 +10,6 @@ function EmployeeList(props) {
       <EmployeeListItem individualWorker={props.workers.john}/>
       <EmployeeListItem individualWorker={props.workers.ray}/>
       <EmployeeListItem individualWorker={props.workers.paul}/>
-      
     </div>
   )
 }
