@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
-function EmployeePage(props) {
+
+const EmployeePage = () => {
   return (
-    <div className='ePage'>
-      <Header passedProp={props.yourTitle}/>
-      
-    </div>
+    <div>EmployeePage</div>
   )
 }
+
 export default EmployeePage
