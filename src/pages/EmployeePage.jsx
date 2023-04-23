@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const EmployeePage = () => {
   return (
-    <div>EmployeePage</div>
+    <div className='employee-page'>
+        <Header headline='Employee' />
+    </div>
   )
 }
 

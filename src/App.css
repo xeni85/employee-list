@@ -1,38 +1,82 @@
-.App {
+.App{
+  display: flex;
+}
+
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.employee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50vw;
+}
+
+.employee-card {
+  margin: 20px;
+  width: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employee-card img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.employee-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.employee-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #777;
 }
 
-.App-link {
-  color: #61dafb;
+.employee-page {
+  width: 100%;
+  height: auto;
+  border-left: 0.01rem #3f51b5 solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 8px;
+}
+
+.search-bar-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-bar-button:hover {
+  background-color: #0069d9;
 }
